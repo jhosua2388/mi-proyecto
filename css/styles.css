@@ -1,0 +1,187 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;    
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    background-color:#fbfbfb;
+    padding-top: 10px;
+    margin: 0;
+    color: #0f0f0f; 
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;   
+}
+header{
+    background-color: #fbfbfb;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed; 
+    display: flex;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;    
+}
+header li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+section{
+    padding: 100px 10px 10px 10px;
+}
+.contacto2{
+    background-color: rgba(175, 89, 158, 0.3);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;    
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+article{
+    text-align: center;
+}
+.imgR{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 300px;
+}
+p {
+    padding: 20px 0px;
+}
+
+section ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 30px;
+}
+section ul li{
+    align-items: center;
+
+}
+section ul li img{
+    width: 60px;
+    height: 60px;
+    padding: auto;
+}
+
+button{
+    background-color: #af599e;
+    color: #fbfbfb;
+    border-radius: 45px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    font-size: 20px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    height: 90px; 
+    text-align: center;
+    background-color: #af599e;
+    color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:768px){
+    .ini1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+    }
+    .imgR{
+        display: block;
+        align-items: center;
+        margin: 20px;
+    }
+    .contacto2{
+        max-width: 500px;
+        justify-self: center;
+        margin: 0 auto;
+    }
+}
+@media (min-width:401px) and (max-width:767px){
+    .contacto2{
+        max-width: 400px;
+        justify-self: center;
+        margin: 0 auto;
+    }
+}
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
